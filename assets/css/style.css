@@ -22,3 +22,15 @@ h1 {
 div p {
   font-family: 'Sometype Mono', 'monospace';
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+}

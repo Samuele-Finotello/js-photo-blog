@@ -2,7 +2,7 @@ const photos = document.getElementById('photos');
 
 for (let i = 0; i < 6; i++) {
   axios.get(`https://lanciweb.github.io/demo/api/pictures/`).then((resp) => {
-    photos.innerHTML += `<div class="col-4 pt-3">
+    photos.innerHTML += `<div class="col-12 col-md-6 col-lg-4 pt-4">
           <div class="card rounded-0">
             <div class="card-image m-3">
               <img class="position-absolute top-0 start-50 translate-middle" src="img/pin.svg" alt="">
