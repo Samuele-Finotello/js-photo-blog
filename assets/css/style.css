@@ -1,0 +1,13 @@
+header {
+  height: 150px;
+  background-image: url(../../img/wall.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Edu Tas Beginner';
+  font-size: 5rem;
+  font-weight: bold;
+}
