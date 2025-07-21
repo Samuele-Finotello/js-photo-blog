@@ -18,3 +18,7 @@ h1 {
   font-size: 5rem;
   font-weight: bold;
 }
+
+div p {
+  font-family: 'Sometype Mono', 'monospace';
+}
