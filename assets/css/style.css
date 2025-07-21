@@ -6,6 +6,10 @@ header {
   justify-content: center;
 }
 
+main {
+  background-image: url(../../img/cork.png);
+}
+
 h1 {
   font-family: 'Edu Tas Beginner';
   font-size: 5rem;
