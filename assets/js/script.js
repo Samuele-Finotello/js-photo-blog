@@ -2,7 +2,6 @@ const photos = document.getElementById('photos');
 
 axios.get(`https://lanciweb.github.io/demo/api/pictures/`).then((resp) => {
   let array = resp.data;
-  console.log(array)
   for (let i = 0; i < array.length; i++) {
     photos.innerHTML += `<div class="col-12 col-md-6 col-lg-4 pt-4">
           <div class="card rounded-0">
@@ -25,8 +24,6 @@ axios.get(`https://lanciweb.github.io/demo/api/pictures/`).then((resp) => {
     card.addEventListener('click', (event) => {
       event.preventDefault();
 
-      console.log(card['src']);
-
       const overlay = document.getElementById('overlay');
       overlay.classList.remove('d-none');
 
@@ -41,9 +38,6 @@ axios.get(`https://lanciweb.github.io/demo/api/pictures/`).then((resp) => {
         overlay.classList.add('d-none');
         overlay.innerHTML = '';
       })
-
     })
   })
-
-
 });
