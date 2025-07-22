@@ -17,12 +17,27 @@ axios.get(`https://lanciweb.github.io/demo/api/pictures/`).then((resp) => {
           </div>
         </div>`
   }
+
+  const cards = document.querySelectorAll('.card-image');
+  console.log(cards);
+
+  cards.forEach(card => {
+    card.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      console.log(cards)
+
+      const overlay = document.getElementById('overlay');
+      overlay.classList.remove('d-none');
+
+      const close = document.getElementById('close');
+      close.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        overlay.classList.add('d-none');
+      })
+
+    })
+  })
+
 });
-
-const cards = document.querySelectorAll('.card');
-
-cards.addEventListener('click', (event) => {
-  event.preventDefault();
-
-
-})
