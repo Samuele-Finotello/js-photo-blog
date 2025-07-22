@@ -9,13 +9,15 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 0;
 }
 
 main {
   background-image: url(../../img/cork.png);
   position: relative;
-  z-index: 0;
+}
+
+div .card-img:hover {
+  cursor: pointer;
 }
 
 h1 {
@@ -40,6 +42,10 @@ div p {
   opacity: 1;
 }
 
+.hw-500 {
+  height: 500px;
+  width: 500px;
+}
 
 
 
