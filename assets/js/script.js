@@ -1,7 +1,8 @@
 const photos = document.getElementById('photos');
 
-for (let i = 0; i < 6; i++) {
-  axios.get(`https://lanciweb.github.io/demo/api/pictures/`).then((resp) => {
+axios.get(`https://lanciweb.github.io/demo/api/pictures/`).then((resp) => {
+  let array = resp.data;
+  for (let i = 0; i < array.length; i++) {
     photos.innerHTML += `<div class="col-12 col-md-6 col-lg-4 pt-4">
           <div class="card rounded-0">
             <div class="card-image m-3">
@@ -15,5 +16,5 @@ for (let i = 0; i < 6; i++) {
             </div>
           </div>
         </div>`
-  })
-}
+  }
+})
